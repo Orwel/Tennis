@@ -464,7 +464,8 @@ form button {
   }
 
   .section-center-title {
-    width: 100%;
+    width: calc(100vw - 90px);
+    overflow-x: hidden;
     background-color: var(--third-color);
     margin-left: -50px;
     padding: 6px 48px; 
