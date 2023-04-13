@@ -464,12 +464,13 @@ form button {
   }
 
   .section-center-title {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 190px);
     overflow-x: hidden;
     background-color: var(--third-color);
-    margin-left: -50px;
-    padding: 6px 48px; 
-    font-size: var(--sm);
+    margin-left: -60px;
+    padding: 10px 50px; 
+    font-size: 0.6rem);
+    margin-top: 7%;
   }
 
   .section-center-text {
