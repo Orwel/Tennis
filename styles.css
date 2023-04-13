@@ -27,17 +27,17 @@ body {
 /* Header */
 
 header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: var(--white);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
     height: 100px;
-    width: 100vw;
+    justify-content: space-between;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    background-color: var(--white);
+    width: 100vw;
     z-index: 10;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-left, .navbar-right {
@@ -56,10 +56,10 @@ header {
 }
 
 .navbar-center nav ul li a {
+    color: var(--azul-muy-oscuro);
+    font-size: var(--sm);
     padding-left: 12px;
     text-decoration: none;
-    font-size: var(--sm);
-    color: var(--azul-muy-oscuro);
 }
 
 .navbar-center nav ul li a:hover {
@@ -204,7 +204,7 @@ header {
     align-self: flex-end; }
 
   .numeradores {
-    
+
     width: 19em;
     height: 2.3rem;
     background: var(--primary-color);
@@ -231,6 +231,10 @@ header {
     font-weight: 300;
   }
 
+  .section-center-mobile {
+    display: none;
+  }
+
 /* Section-bottom */
 
 .section-bottom-title {
@@ -244,7 +248,7 @@ header {
 .section-bottom {
     display: flex;
     margin: 0 60px;
-    
+
 }
 
 .section-bottom div img {
@@ -337,7 +341,7 @@ header {
     padding: 3.125rem;
 }
 
-.nav-footer-left ul li, 
+.nav-footer-left ul li,
 .nav-footer-right ul li {
   list-style: none;
   padding: 0.15625rem;
@@ -407,11 +411,11 @@ form button {
     font-size: 1.4rem;
     transition: transform 0.2s ease;
   }
-  
+
   .navbar-right i:hover {
     transform: scale(1.2);
   }
-    
+
   /* Section-top */
 
   .section-top {
@@ -423,7 +427,7 @@ form button {
   .section-top div img {
     max-width: 100%;
     height: auto;
-    
+
   }
 
   .section-top div:last-of-type {
@@ -438,7 +442,7 @@ form button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
- 
+
   }
 
   .section-center-top h2 {
@@ -453,36 +457,61 @@ form button {
 
   /* Section-center */
 
-  .div-section-center {
-    margin-top: 20px;
-
-  }
   .section-center {
+    display: none;
+  }
+
+  .section-center-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .section-center-title {
-    width: 100vw;
+  .div-section-center-mobile {
+    margin-top: 20px;
+    margin-left: 100px;
+
+  }
+
+  .div-section-center-mobile-top {
+    display: flex;
+    background-color: var(--third-color);
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px 0 0px 20px;
+    margin-left: -30px;
+    
+  }
+
+  /* .section-center-title-mobile {
+    display: flex;
     background-color: var(--third-color);
     margin-left: -50px;
-    padding: 6px 48px; 
+    padding: 6px 48px;
     font-size: var(--sm);
+    overflow-x: hidden;
+  } */
+
+  .section-center-title {
+    font-size: var(--sm);
+    color: var(--azul-muy-oscuro);
+    font-weight: 700;
+    text-align: center;
+
   }
 
   .section-center-text {
-    max-width: 50%;
-    margin-left: -90px;
+    max-width: 80%;
     font-weight: 300;
     font-size: var(--sm);
 
   }
   .numeradores {
-    margin-top: 13px;
+    margin-top: 1px;
     width: 80px;
     z-index: 1;
     padding: 0 25px;
+    height: auto;
   }
 
   /* Section-bottom  */
@@ -495,7 +524,7 @@ form button {
 
   .section-bottom div {
     width: 100%;
-    
+
   }
 
   .card {
@@ -543,7 +572,7 @@ form button {
 }
 
   .div-nav div {
-    
+
     padding-left: 2rem;
   }
 
@@ -555,7 +584,7 @@ form button {
     padding: 1rem;
   }
 
-  .nav-footer-left ul li, 
+  .nav-footer-left ul li,
   .nav-footer-right ul li {
     padding: 0.5rem;
   }
@@ -570,7 +599,7 @@ form button {
     color: var(--gris-oscuro);
     margin-left: 5%;
   }
-  .div-social-footer img { 
+  .div-social-footer img {
     margin-top: 5%;
     margin-left: 20%;
    }
@@ -584,7 +613,7 @@ form button {
   }
 
   .div-nav {
-    
+
     margin-right: 4rem;
   }
 
@@ -593,7 +622,7 @@ form button {
     padding: 0.2rem
   }
 
-  .div-social-footer img { 
+  .div-social-footer img {
     margin-top: 5%;
     margin-left: 20%;
    }
